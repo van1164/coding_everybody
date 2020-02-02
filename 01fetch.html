@@ -1,0 +1,32 @@
+<!--다른 html에 있는 정보 불러오기-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <article>
+
+
+        </article>
+    
+
+        <input type="button" value="fetch" onclick="
+            fetch('html').then(function(response){
+            response.text().then(function(text){
+                alert(text);
+                document.querySelector('article').innerHTML =text;
+            })
+        })
+        ">
+
+            <!-- fetch를 통해 다른 html의 text를 불러오는 예제-->
+    </body>
+</html>
+
+
+
+
+
+
